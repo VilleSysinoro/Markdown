@@ -1,4 +1,4 @@
-# Se ihan ensimmäinen hei maailma esimekki
+# Se ihan ensimmäinen hei maailma -esimekki
 
 print('Hello World!')
 
