@@ -24,8 +24,7 @@ class Person():
         self.sukunimi = sukunimi
 
     # Saattinen metodi, joka laskee iän, Staattisessa metodissa ei luoda oliota lainkaan
-    # Vaa
-
+    # Vaan metodia voi käyttää suoraan luokasta käsin
     @staticmethod
     def calculateAge(birthDay) -> float:
         """Calculates student's current age in full years
@@ -37,7 +36,8 @@ class Person():
         age = datetime.datetime.now() - birthDay
         ageInYears = age.days / 365
         return round(ageInYears)
-    
+    # Luokka metodi on myös staattinen, eli ei vaadi oolion muodostamista
+    # Huomaa luokkaan viittaava cls, joka korvaa perinteisen self:n
     @classmethod
     def calculateAge2(cls, birthDay):
         """Calculates student's current age in full years
